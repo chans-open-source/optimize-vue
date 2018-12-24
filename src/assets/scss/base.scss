@@ -1,0 +1,9 @@
+/**px转rem*/
+@function rem($n) {
+  @return $n / 24 * 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
