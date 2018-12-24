@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="document-version" content="<%= htmlWebpackPlugin.options.title.b %>">
+  <script>
+    window.pageTimestamp = document.getElementsByName('document-version')[0].content;
+    console.log('Page create at ' + window.pageTimestamp);
+  </script>
   <link rel="icon" href="/favicon.ico">
   <title><%= htmlWebpackPlugin.options.title.a %></title>
 </head>
@@ -11,12 +16,6 @@
 <noscript>
   <strong>请开启浏览器的JS功能</strong>
 </noscript>
-<span id="document-timestamp"
-      style="display: none;"><%= htmlWebpackPlugin.options.title.b %></span>
-<script>
-  window.pageTimestamp = document.getElementById('document-timestamp').innerText;
-  console.log('Page create at ' + window.pageTimestamp);
-</script>
 <div id="app"></div>
 <!-- built files will be auto injected -->
 </body>
