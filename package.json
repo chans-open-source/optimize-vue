@@ -1,6 +1,10 @@
 {
   "name": "optimize-vue",
   "version": "0.1.0",
+  "description": "基于 vue-cli 3.0 构建的快速开发框架",
+  "author": {
+    "name": "changeden"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
