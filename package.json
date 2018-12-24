@@ -58,5 +58,13 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/ChangedenCZD/optimize-vue/issues"
+  },
+  "homepage": "https://github.com/ChangedenCZD/optimize-vue#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChangedenCZD/optimize-vue.git"
+  }
 }
