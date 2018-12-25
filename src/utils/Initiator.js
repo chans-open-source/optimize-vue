@@ -27,5 +27,6 @@ export default class Initiator extends WindowContext {
       width,
       height
     }).then().catch();
+    window.remScale = (window.fontSize = parseFloat(window.getComputedStyle(window.document.querySelector('html')).fontSize)) / 24;
   }
 }
