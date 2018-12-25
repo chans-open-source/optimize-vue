@@ -8,6 +8,7 @@
   <script>
     window.pageTimestamp = document.getElementsByName('document-version')[0].content;
     console.log('Page create at ' + window.pageTimestamp);
+    var __IsDebug = /localhost|192/.test(window.location.origin);
   </script>
   <link rel="icon" href="/favicon.ico">
   <title><%= htmlWebpackPlugin.options.title.a %></title>

@@ -1,6 +1,7 @@
-const { pages, port } = require('./config');
+const { pages, port, baseUrl } = require('./config');
 module.exports = {
   pages,
+  baseUrl,
   devServer: {
     port,
     disableHostCheck: true
