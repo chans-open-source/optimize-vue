@@ -5,8 +5,8 @@ class Options {
   constructor () {
     this.url = '';
     this.method = Method.GET;
-    this.data = {};
-    this.params = {};
+    this.data = undefined;
+    this.params = undefined;
     this.timeout = 60000;
     this.maxContentLength = 3145728;
   }
@@ -28,12 +28,12 @@ export default class Api {
     return this;
   }
 
-  setData (data = {}) {
+  setData (data) {
     this.options.data = data;
     return this;
   }
 
-  setParams (params = {}) {
+  setParams (params) {
     this.options.params = params;
     return this;
   }
