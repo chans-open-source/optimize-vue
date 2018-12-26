@@ -1,5 +1,7 @@
-import HomeLayout from '../../components/home';
-
+const GLOBAL = {};
 export default {
-  HomeLayout
+  GLOBAL,
+  '/index': {
+    HomeLayout: () => import('../../components/home')
+  }
 };
