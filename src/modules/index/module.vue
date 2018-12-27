@@ -5,5 +5,9 @@
   </section>
 </template>
 
-<script>module.exports = require('./module.js');</script>
+<script>
+  import m from './module.js';
+
+  export default m;
+</script>
 <style lang="scss" scoped="true">@import "./module.scss";</style>
