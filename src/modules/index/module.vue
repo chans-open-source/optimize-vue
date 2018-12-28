@@ -10,4 +10,4 @@
 
   export default m;
 </script>
-<style lang="scss" scoped="true">@import "./module.scss";</style>
+<style lang="scss">@import "./module.scss";</style>

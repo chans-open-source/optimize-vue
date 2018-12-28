@@ -30,7 +30,7 @@ class Module extends VueModule {
   }
 
   onCreate () {
-    super.onCreate(this);
+    super.onCreate();
   }
 }
 
