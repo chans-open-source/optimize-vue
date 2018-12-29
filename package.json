@@ -1,6 +1,6 @@
 {
   "name": "optimize-vue",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "基于 vue-cli 3.0 构建的快速开发框架",
   "author": {
     "name": "changeden"
@@ -16,6 +16,7 @@
     "clone": "latest",
     "co": "latest",
     "compatible-storage": "^0.1.6",
+    "isarray": "^2.0.4",
     "md5": "^2.2.1",
     "node-sass": "4.11.0",
     "sass-loader": "^7.1.0",

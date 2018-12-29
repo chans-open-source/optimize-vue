@@ -1,3 +1,4 @@
+import isArray from 'isarray';
 import RouteQueryKey from '../resource/RouteQueryKey';
 
 const KEY_UNDEFINED = 'undefined';
@@ -11,7 +12,7 @@ export default class RouterUtils {
   static getValidParam (app, queryKey, defaultValue, routeQueryInfo) {
     const query = RouterUtils.routeQuery(app);
     let param = query[queryKey];
-    if (param instanceof Array) {
+    if (isArray(param)) {
       param = param[param.length - 1];
     } else if ('object' === typeof param) {
       const keys = Object.keys(param);
