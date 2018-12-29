@@ -19,7 +19,7 @@ export default class RouterUtils {
       param = param[keys.length - 1];
     }
     param = ((KEY_UNDEFINED === typeof param || KEY_UNDEFINED === param || KEY_NULL === param) ? '' : param) || defaultValue;
-    if (routeQueryInfo && routeQueryInfo.condition) {
+    if (routeQueryInfo && 'function' === typeof routeQueryInfo.condition) {
       const condition = routeQueryInfo.condition;
       param = condition(param);
     }
