@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="document-version" content="<%= htmlWebpackPlugin.options.title.b %>">
   <script>
-    window.pageTimestamp = document.getElementsByName('document-version')[0].content;
-    console.log('Page create at ' + window.pageTimestamp);
+    var __RootVersion = document.getElementsByName('document-version')[0].content;
+    console.log('Page create at ' + __RootVersion);
     var __IsDebug = /localhost|192/.test(window.location.origin);
   </script>
   <link rel="icon" href="/favicon.ico">
