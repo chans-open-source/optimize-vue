@@ -1,6 +1,6 @@
 {
   "name": "optimize-vue",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "基于 vue-cli 3.0 构建的快速开发框架",
   "author": {
     "name": "changeden"
@@ -26,9 +26,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-plugin-babel": "^3.2.2",
+    "@vue/cli-plugin-eslint": "^3.2.2",
+    "@vue/cli-service": "^3.2.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
