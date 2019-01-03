@@ -5,10 +5,12 @@ const KEY_UNDEFINED = 'undefined';
 const KEY_NULL = 'null';
 export default class RouterUtils {
 
+  // 获取Vue实例中的路由信息
   static routeQuery (app) {
     return (app.$route || {}).query || {};
   }
 
+  // 获取有效参数
   static getValidParam (app, queryKey, defaultValue, routeQueryInfo) {
     const query = RouterUtils.routeQuery(app);
     let param = query[queryKey];
@@ -26,6 +28,7 @@ export default class RouterUtils {
     return param;
   }
 
+  // 解析路由器参数
   static parseRoute (app) {
     const _RouteQueryKey = RouteQueryKey;
     Object.keys(RouteQueryKey).forEach(key => {

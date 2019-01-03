@@ -36,6 +36,7 @@ const min = function () {
 
 export default class Initiator extends WindowContext {
 
+  // 初始化Vue实例
   static registerApp (app) {
     this.$app = app;
     this.$w.globalApp = app;

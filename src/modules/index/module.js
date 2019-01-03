@@ -5,10 +5,15 @@ class Module extends VueModule {
   constructor () {
     super();
     this.setModuleName('module-index');
-    this.setProps([]);
+    // Vue.components
     this.setComponent({});
+    // Vue.methods
     this.setMethod({
+      // Vuex.mapActions
       ...Module.mapActions([]),
+      /**
+       * Vue.created中会默认调用该方法
+       * */
       init () {
         this.request();
       },
@@ -19,16 +24,23 @@ class Module extends VueModule {
         });
       }
     });
+    // Vue.computed
     this.setCompute({
+      // Vuex.mapGetters
       ...Module.mapGetters({})
     });
+    // Vue.watch
     this.setWatch({});
   }
 
+  // Vue.data = {
+  //   return {};
+  // }
   getData () {
     return {};
   }
 
+  // Vue.created
   onCreate () {
     super.onCreate();
   }

@@ -11,13 +11,18 @@ export default class VueModule extends Context {
   constructor () {
     super();
     const self = this;
+    // Vue实例，created时会赋值
     this.$app = undefined;
     this.name = DEFAULT_MODULE_NAME;
     this.props = [];
     this.watch = {};
-    this.methods = {};
+    this.methods = {
+      // 每个模块（页面）/组件默认添加的方法
+      ...actions({})
+    };
     this.components = {};
     this.computed = {
+      // 每个模块（页面）/组件默认添加的属性
       ...getter({
         windowWidth: 'windowWidth',
         windowHeight: 'windowHeight'
