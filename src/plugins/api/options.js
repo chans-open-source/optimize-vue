@@ -61,6 +61,12 @@ export default class Api {
     return this;
   }
 
+  // 设置请求头部
+  setHeaders (headers) {
+    this.options.headers = headers;
+    return this;
+  }
+
   // 执行接口请求
   request () {
     const self = this;
