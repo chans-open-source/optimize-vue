@@ -1,4 +1,5 @@
 # optimize-vue
+[![LICENSE](https://img.shields.io/badge/license-MIT%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 ## Install Cli
 ```
@@ -68,3 +69,8 @@ yarn run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 See [Cli Information](https://www.npmjs.com/package/optimize-vue-cli)
+
+
+
+
+[LICENSE.MIT](https://github.com/ChangedenCZD/optimize-vue-cli/blob/master/LICENSE)
